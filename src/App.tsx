@@ -68,12 +68,12 @@ const App = () => {
   return (
     <>
       <div style={{ display: "flex" }}>
-        <Spinner m={"5px"} />
-        <Spinner borderColor="#ff0000" />
-        <Spinner borderColor="#00ff00" />
-        <Spinner borderColor="#0000ff" />
+        <Spinner m={"5px"} size="sm" />
+        <Spinner borderColor="#ff0000" size="md" />
+        <Spinner borderColor="#00ff00" size="lg" />
+        <Spinner borderColor="#0000ff" size="md" />
       </div>
-      <div>
+      {/*<div>
         <AlertDialog
           message="Are you sure want to delete ?"
           bg="#fff"
@@ -229,7 +229,7 @@ const App = () => {
           <Divider color="#bbb" thickness="3px" />
           <p>Some text here</p>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

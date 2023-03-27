@@ -22,18 +22,24 @@ from {
 const SpinnerBody = styled.div<SpinnerProps>`
   height: ${({ size }) =>
     size
-      ? (size == "sm" && "50px") ||
-        (size == "md" && "100px") ||
-        (size == "lg" && "120px")
+      ? (size == "sm" && "20px") ||
+        (size == "md" && "30px") ||
+        (size == "lg" && "40px")
       : "2rem"};
   margin: ${(p) => (p.m ? p.m : "5px")};
   width: ${({ size }) =>
     size
-      ? (size == "sm" && "50px") ||
-        (size == "md" && "100px") ||
-        (size == "lg" && "120px")
-      : "2rem"};
-  border: ${(p) => (p.borderWidth ? p.borderWidth : "3px")} solid #d1d5db;
+      ? (size == "sm" && "20px") ||
+        (size == "md" && "30px") ||
+        (size == "lg" && "40px")
+      : "20px"};
+  border: ${({ size }) =>
+      size
+        ? (size == "sm" && "3px") ||
+          (size == "md" && "5px") ||
+          (size == "lg" && "6px")
+        : "3px"}
+    solid #d1d5db;
   border-top-color: ${(p) => (p.borderColor ? p.borderColor : "#3b82f6")};
   border-radius: 50%;
   animation: ${spinnerAnimation}
